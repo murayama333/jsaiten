@@ -78,7 +78,7 @@ class PresensTableSeeder extends Seeder
             'fest_id' => 1,
             'user_id' => 11,
             'status' => 0,
-            'title' => '未定'
+            'title' => 'エンジニア会について'
         ]);
 
         // 田代
