@@ -27,6 +27,13 @@ class Presen extends Model
         return $this->belongsTo('App\Fest');
     }
 
+    public function totalLikeCount()
+    {
+        return $this->likes->reduce(function($c, $l){
+            return $c + $l->count;
+        });
+    }
+
     public function myLikeCount($userId)
     {
         $like =  $this->likes->filter(function($l) use($userId){

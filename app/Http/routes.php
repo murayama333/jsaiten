@@ -23,6 +23,12 @@ Route::get('/feedback/{presenId}', 'PresensController@createFeedback');
 Route::post('/feedback/{presenId}', 'PresensController@storeFeedback');
 
 
+Route::get('/reports/presens', 'ReportsController@presens');
+Route::get('/reports/presens/{presenId}', 'ReportsController@presen');
+Route::get('/reports/users', 'ReportsController@users');
+Route::get('/reports/users/{userId}', 'ReportsController@user');
+
+
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');

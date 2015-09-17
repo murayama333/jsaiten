@@ -34,7 +34,7 @@
                 <div class="form-group">
                     <label for="date">フィードバック
                     </label>
-                    <textarea rows="5" class="form-control" id="comment" name="comment" placeholder="140文字まで">{{$feedback->comment}}</textarea>
+                    <textarea rows="5" class="form-control" id="comment" name="comment" placeholder="140文字程度">{{old('comment') != null ? old('comment') : $feedback->comment}}</textarea>
                 </div>
                 <input type="submit" value="フィードバック"
                 class="btn btn-lg btn-success"

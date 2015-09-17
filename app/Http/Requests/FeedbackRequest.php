@@ -25,7 +25,7 @@ class FeedbackRequest extends Request
     public function rules()
     {
         return [
-            'comment' => 'required|string|max:140'
+            'comment' => 'required|string|max:280'
         ];
     }
 }

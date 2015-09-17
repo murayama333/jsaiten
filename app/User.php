@@ -52,4 +52,11 @@ class User extends Model implements AuthenticatableContract,
         return $this->hasMany('App\Feedback');
     }
 
+    public function totalLikeCount()
+    {
+        return $this->likes->reduce(function($c, $l){
+            return $c + $l->count;
+        });
+    }
+
 }
