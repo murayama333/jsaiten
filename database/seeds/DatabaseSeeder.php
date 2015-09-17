@@ -135,5 +135,8 @@ class PresensTableSeeder extends Seeder
             'status' => 0,
             'title' => '未定'
         ]);
+
+        DB::table('likes')->delete();
+        DB::table('feedbacks')->delete();
     }
 }
