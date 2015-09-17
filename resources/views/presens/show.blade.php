@@ -13,7 +13,7 @@
   <div class="row">
       <div class="col-md-4 col-xs-12">
           <div>
-              <img width="80%" src="https://mug0.assets-yammer.com/mugshot/images/4VHTZP6ChbSkHZCqwFW2Pq-nws0mD6BM">
+              <img width="80%" src="https://dl.dropboxusercontent.com/u/141509/{{$presen->user->name}}.png">
           </div>
       </div>
   </div>
@@ -38,7 +38,6 @@
         $.get("/like/{{$presen->id}}",
             function(res){
                 $("#likeCount").text(res.likeCount);
-
             }
         );
         $("#likeCount").text("（´-`）.｡oO（通信中・・・）");

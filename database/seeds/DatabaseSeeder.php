@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
                 'id' => ($key+1),
                 'name' => $items[0],
                 'email' => $user,
-                'password' => bcrypt('jsaiten')
+                'password' => bcrypt('jsaiten15')
             ]);
             $id++;
         });
@@ -71,9 +71,19 @@ class PresensTableSeeder extends Seeder
     {
 
         DB::table('presens')->delete();
-        // 田代
+
+        // 村山
         Presen::create([
             'id' => 1,
+            'fest_id' => 1,
+            'user_id' => 11,
+            'status' => 0,
+            'title' => '未定'
+        ]);
+
+        // 田代
+        Presen::create([
+            'id' => 2,
             'fest_id' => 1,
             'user_id' => 42,
             'status' => 0,
@@ -83,7 +93,7 @@ class PresensTableSeeder extends Seeder
 
         // 義元
         Presen::create([
-            'id' => 2,
+            'id' => 3,
             'fest_id' => 1,
             'user_id' => 36,
             'status' => 0,
@@ -92,7 +102,7 @@ class PresensTableSeeder extends Seeder
 
         // 鈴木（伸）
         Presen::create([
-            'id' => 3,
+            'id' => 4,
             'fest_id' => 1,
             'user_id' => 40,
             'status' => 0,
@@ -101,7 +111,7 @@ class PresensTableSeeder extends Seeder
 
         // 吉田法
         Presen::create([
-            'id' => 4,
+            'id' => 5,
             'fest_id' => 1,
             'user_id' => 23,
             'status' => 0,
@@ -110,7 +120,7 @@ class PresensTableSeeder extends Seeder
 
         // 高山
         Presen::create([
-            'id' => 5,
+            'id' => 6,
             'fest_id' => 1,
             'user_id' => 20,
             'status' => 0,
@@ -119,7 +129,7 @@ class PresensTableSeeder extends Seeder
 
         // 宮本
         Presen::create([
-            'id' => 6,
+            'id' => 7,
             'fest_id' => 1,
             'user_id' => 21,
             'status' => 0,
