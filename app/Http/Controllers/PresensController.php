@@ -99,7 +99,7 @@ class PresensController extends Controller
         $feedback->comment = $request->comment;
         $feedback->save();
 
-        return redirect("/feedback/{$feedback->id}")
+        return redirect("/feedback/{$feedback->presen->id}")
         ->with(['flash_message' => "登録が完了しました。"])
         ->withInput();
     }
