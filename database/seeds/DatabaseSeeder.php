@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
                 'id' => ($key+1),
                 'name' => $items[0],
                 'email' => $user,
-                'password' => bcrypt('jsaiten15')
+                'password' => bcrypt('jsa15')
             ]);
             $id++;
         });
