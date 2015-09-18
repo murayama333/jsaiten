@@ -133,7 +133,7 @@ class PresensTableSeeder extends Seeder
             'fest_id' => 1,
             'user_id' => 21,
             'status' => 0,
-            'title' => '未定'
+            'title' => '製品アイデアビジネスモデルを考えてみた'
         ]);
 
         DB::table('likes')->delete();
