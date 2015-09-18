@@ -14,6 +14,7 @@
           <div>
               <img width="80%" src="https://dl.dropboxusercontent.com/u/141509/{{$presen->user->name}}.png">
           </div>
+          <hr>
       </div>
   </div>
   <div class="row">
