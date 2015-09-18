@@ -115,7 +115,7 @@ class PresensTableSeeder extends Seeder
             'fest_id' => 1,
             'user_id' => 23,
             'status' => 0,
-            'title' => '未定'
+            'title' => 'ハードを考える'
         ]);
 
         // 高山
